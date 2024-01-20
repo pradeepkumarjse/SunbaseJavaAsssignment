@@ -69,6 +69,36 @@ curl -X GET http://localhost:8080/api/customers \
   -H "Authorization: Bearer your_token_here"
 ```
 
+
+
+## Register your first user from Swagger UI
+
+Go to http://localhost:8080/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/Authentication/saveUser
+
+Call /register api to register your first user
+
+{
+  "username": "pradeep",
+  "password": "pradeep",
+  "email": "pradeep@pradeep.com",
+  "firstname": "Pradeep",
+  "lastname": "Kumar",
+  "role": [
+    {
+      "id": 1,
+      "roleName": "SITE_ADMIN",
+      "description": "SITE_ADMIN"
+    }
+  ],
+  "created_DATE": "2024-01-20",
+  "last_MODIFIED_DATE": "2024-01-20"
+}
+
+use your regsitered username and password to login into frontend/APIs
+
+
+
+
 ![Project Screenshot 1](./project-screenshot-1.png)
 
 
