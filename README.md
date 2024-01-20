@@ -68,3 +68,5 @@ This will return a Bearer token. Include this token in the Authorization header 
 curl -X GET http://localhost:8080/api/customers \
   -H "Authorization: Bearer your_token_here"
 ```
+
+![Project Screenshot 1](./project-screenshot-1.png)
