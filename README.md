@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# locoldeal-backend
-=======
 # Sunbase Java Assignment - Customer Management System
 
 This Spring Boot application serves as a Customer Management System, providing APIs for creating, updating, retrieving, and deleting customer records. JWT authentication is implemented to secure the APIs.
@@ -25,7 +22,7 @@ spring.datasource.url=jdbc:mysql://localhost:3306/sunbase?allowPublicKeyRetrieva
 spring.datasource.username=root
 spring.datasource.password=root
 spring.jpa.generate-ddl=true
-spring.jpa.hibernate.ddl-auto=create
+spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
 
 # For API Documentation
@@ -107,4 +104,3 @@ use your regsitered username and password to login into frontend/APIs
 
 
 # Frontend Repository URL - https://github.com/pradeepkumarjse/FrontendSunbaseJavaAssignment
->>>>>>> 0528bba6898f537b0ef4f6b12869d10fe49b6636
