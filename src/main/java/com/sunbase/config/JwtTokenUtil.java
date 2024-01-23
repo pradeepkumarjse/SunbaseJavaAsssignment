@@ -10,11 +10,11 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
@@ -86,4 +86,16 @@ public class JwtTokenUtil implements Serializable {
                      return "";
                    }            
             }
+            
+        
+      public String getBearerToken() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication instanceof UsernamePasswordAuthenticationToken) {
+            UsernamePasswordAuthenticationToken token = (UsernamePasswordAuthenticationToken) authentication;
+            if (token.getCredentials() != null) {
+                return token.getCredentials().toString();
+            }
+        }
+        return null;
+    }
 }

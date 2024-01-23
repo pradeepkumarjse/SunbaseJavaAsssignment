@@ -15,4 +15,6 @@ public interface CustomerService {
     Customer getCustomerById(Long id);
 
     void deleteCustomer(Long id);
+    
+     public void syncCustomers();
 }

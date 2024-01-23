@@ -105,7 +105,7 @@
            		<plugin><!-- don't pack the war -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-				<executions>
+<!--				<executions>
 					<execution>
 						<id>default-war</id>
 						<phase>none</phase>
@@ -121,13 +121,25 @@
 							<goal>exploded</goal>
 						</goals>
 					</execution>
-				</executions>
+				</executions>-->
 			</plugin>
-            <plugin>
+<!--            <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+            </plugin>-->
+            
+            <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+            <version>2.1.1.RELEASE</version>
+        </plugin>
 		</plugins>
 	</build>
+        
+        
+        
+        
+        
+        
 	<description>Sunbase Java Assignment</description>
 </project>

@@ -46,4 +46,10 @@ public class CustomerController {
         customerService.deleteCustomer(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
+    
+    @PostMapping("/sync")
+    public ResponseEntity<String> syncCustomers() {
+        customerService.syncCustomers();
+        return ResponseEntity.ok("Customer sync completed successfully.");
+    }
 }
