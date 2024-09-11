@@ -1,5 +1,5 @@
 # sunbase Java Assignment - Customer Management System
-
+ 
 This Spring Boot application serves as a Customer Management System, providing APIs for creating, updating, retrieving, and deleting customer records. JWT authentication is implemented to secure the APIs.
 
 ## Prerequisites
