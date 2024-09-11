@@ -42,6 +42,6 @@ jobs:
     - name: Deploy to ECS
       run: |
         aws ecs update-service \
-          --cluster my-ecs-cluster \
+          --cluster my-ecs-cluster-al \
           --service spring-boot-backend-service \
           --force-new-deployment
