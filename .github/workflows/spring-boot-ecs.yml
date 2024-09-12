@@ -44,7 +44,7 @@ jobs:
       run: docker tag spring-boot-app:latest ${{ secrets.ECR_REGISTRY_URL }}/spring-boot-app:latest
 
     - name: Push Docker image to ECR
-      run: docker push ${{ secrets.ECR_REGISTRY_URL }}/spring-boot-app:latest
+      run: docker push ${{ secrets.ECR_REGISTRY_URL }}:latest
 
     # Step 5: Update ECS Service with the new image
     - name: Deploy to ECS
